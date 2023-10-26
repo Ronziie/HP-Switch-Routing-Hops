@@ -47,7 +47,7 @@ def ping_device(ip_address):
         
 def find_path_to_core(initial_ip):
     """
-        Finding the Path to the core WPSWCORE
+        Finding the Path to the core switch
     """
     path = []
     current_switch = netmiko.ConnectHandler(host=initial_ip, username="admin", password="admin", device_type="hp_procurve")
